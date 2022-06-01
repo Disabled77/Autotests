@@ -1,0 +1,4 @@
+//span[contains(text(), \'581\')]
+$x(".//*[contains(@class, 'recharts-text recharts-label')and contains(@text-anchor, 'start')]/tspan")
+//tspan
+//*[@id="root"]/main/div[1]/section[2]/div/div[1]/div/svg/g[6]/g[2]/text[3]/tspan

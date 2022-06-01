@@ -1,0 +1,413 @@
+{
+  "id": "e3092f13-1e87-42d7-bfb2-7d88e21f2752",
+  "version": "2.0",
+  "name": "EVRAZ8340",
+  "url": "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/mining/mining/frv?mine_id=1&lava_id=1&sector_id=1&operationalPlan=true&miningFact=true&period_type=month&month=11",
+  "tests": [{
+    "id": "0c2279bf-3df8-40fd-8bac-91028031013d",
+    "name": "general_enable",
+    "commands": [{
+      "id": "392f099e-a24e-4d8e-bf6c-030ee46114b0",
+      "comment": "",
+      "command": "open",
+      "target": "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/general",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c36279dd-eb01-4dfc-a113-555de92de770",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//td[contains(.,'Распадская угольная компания')]",
+      "targets": [
+        ["css=.PageMines_tableRow_first__16jq4 > .PageMines_tableCell_name__2IC90", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Распадская угольная компания')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "82d4a917-7d18-48e9-95c8-a29c49d98ff9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(text(), 'Распадская 7 пласт')]",
+      "targets": [
+        ["css=.PageMines_tableRow__2LbSH:nth-child(2) .PageMines_User__1V67E", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr[2]/td/div", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3fcacafd-82be-4d93-99e9-c499c41da9ef",
+    "name": "mining_enable",
+    "commands": [{
+      "id": "4158b593-f572-487d-b1ee-be71c5115721",
+      "comment": "",
+      "command": "open",
+      "target": "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/general",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7eed4bb-3066-4932-9391-e7d9bf670e79",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//td[contains(.,'Распадская угольная компания')]",
+      "targets": [
+        ["css=.PageMines_tableRow_first__16jq4 > .PageMines_tableCell_name__2IC90", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Распадская угольная компания')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "4287eba3-de66-4c84-89d5-22c5d458fa62",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(text(), 'Распадская 7 пласт')]",
+      "targets": [
+        ["css=.PageMines_tableRow__2LbSH:nth-child(2) .PageMines_User__1V67E", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr[2]/td/div", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13c397f1-0640-4453-9ad2-f8dca4b092c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.PageMines_tableRow__2LbSH:nth-child(2) > .PageMines_tableCell__1zmVY:nth-child(2)",
+      "targets": [
+        ["css=.Dropdown_root__12rX8:nth-child(4) > .Dropdown_header__3CIn1", "css:finder"],
+        ["xpath=//div[@id='root']/div[4]/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d63a55de-6cc0-407e-ac27-c4823edf5ab6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=section:nth-child(1) > .MiningTable_Body__yVFqt > .MiningTable_RowWrapper__2h2e_ > .MiningTable_RowWithDashlet__2Zq_s",
+      "targets": [
+        ["css=section:nth-child(1) > .MiningTable_Body__yVFqt > .MiningTable_RowWrapper__2h2e_ > .MiningTable_RowWithDashlet__2Zq_s", "css:finder"],
+        ["xpath=//div[@id='root']/div[5]/div/div[4]/section/div/div/div", "xpath:idRelative"],
+        ["xpath=//section/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "56957681-5f1e-4a2b-a6a0-464d9f6d55a1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=section:nth-child(1) > .MiningTable_Body__yVFqt > .MiningTable_RowWrapper__2h2e_ > .MiningTable_RowWithDashlet__2Zq_s",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f076b20a-86c0-4a0f-94a0-d997ff308f4e",
+    "name": "general_without_wait",
+    "commands": [{
+      "id": "ef6647b7-6275-4575-8c41-55680df7bc82",
+      "comment": "",
+      "command": "open",
+      "target": "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/general",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84ac231d-cd58-4487-ab10-ad854a49c101",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(text(), 'Распадская 7 пласт')]",
+      "targets": [
+        ["css=.PageMines_tableRow__2LbSH:nth-child(2) .PageMines_User__1V67E", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr[2]/td/div", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "97067d74-e30c-4b9e-8dbe-de8798b66d4b",
+    "name": "table_editable",
+    "commands": [{
+      "id": "2ba32b1f-55d1-42da-a41c-ce2bf7ae331a",
+      "comment": "",
+      "command": "open",
+      "target": "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/mining/mining/frv?mine_id=1&lava_id=1&sector_id=1&operationalPlan=true&miningFact=true&period_type=month&month=11",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74beec0b-3824-41a2-a065-a0407f2b949f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Filters_section_right__AetF_ > .Dropdown_root__12rX8:nth-child(3) > .Dropdown_header__3CIn1",
+      "targets": [
+        ["css=.Filters_section_right__AetF_ > .Dropdown_root__12rX8:nth-child(3) > .Dropdown_header__3CIn1", "css:finder"],
+        ["xpath=//div[@id='root']/div[4]/div[2]/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "9f8dc899-f13e-498c-b4b7-57a532218a25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Filters_section_right__AetF_ > .Dropdown_root__12rX8:nth-child(3) .icon-pointer",
+      "targets": [
+        ["css=.Filters_section_right__AetF_ > .Dropdown_root__12rX8:nth-child(3) .icon-pointer", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e38626c7-7b44-406a-9195-823a4a187aea",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div[4]/div[2]/div[3]/div[2]/div[2]",
+      "targets": [
+        ["css=.DropdownOption_root__15BXz:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div[4]/div[2]/div[3]/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "620736e2-f3ef-4e5a-b335-a268f52d7b02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.DropdownOption_root__15BXz:nth-child(3)",
+      "targets": [
+        ["css=.DropdownOption_root__15BXz:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div[4]/div[2]/div[3]/div[2]/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a477918-851a-41fd-bd83-8c0e517c4b43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Filters_root__1hbxp",
+      "targets": [
+        ["css=.Filters_root__1hbxp", "css:finder"],
+        ["xpath=//div[@id='root']/div[4]", "xpath:idRelative"],
+        ["xpath=//body/div/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "45d95c7f-1f39-4291-9afa-a65a8dac46f9",
+    "name": "raspadskaya_7_exist",
+    "commands": [{
+      "id": "d069e9de-bc4f-457a-bb39-f7630d6b54db",
+      "comment": "",
+      "command": "open",
+      "target": "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/general",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d94d216a-afad-4c44-987c-b9f54f00c9ce",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//td[contains(.,'Распадская угольная компания')]",
+      "targets": [
+        ["css=.PageMines_tableRow_first__16jq4 > .PageMines_tableCell_name__2IC90", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Распадская угольная компания')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "2a868be7-e683-49e3-ba98-2ef0dfc09757",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(text(), 'Распадская 7 пласт')]",
+      "targets": [
+        ["css=.PageMines_tableRow__2LbSH:nth-child(2) .PageMines_User__1V67E", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr[2]/td/div", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "28907e7c-816c-4194-a4bf-2f6aa790914f",
+    "name": "raspadskaya_7_prohodka",
+    "commands": [{
+      "id": "69ba8d37-73b0-486c-9e94-ec72fb8057c6",
+      "comment": "",
+      "command": "open",
+      "target": "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/sinking/workings?mine_id=1&lava_id=1&sector_id=0&actual=true&operationalPlan=true&period_type=year",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a1027d6-2f9e-4acf-99fe-ae8d815c3a94",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=.//span[@data-tip='Прогнозное значение на 2022 год']",
+      "targets": [
+        ["css=.PageMines_tableRow_first__16jq4 > .PageMines_tableCell_name__2IC90", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Распадская угольная компания')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "bbfc5343-cdba-4a42-9620-c7ebed2f0577",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=.//span[@data-tip='Прогнозное значение на 2022 год']",
+      "targets": [],
+      "value": "plan"
+    }, {
+      "id": "e1006f0e-e134-424b-8ac0-d9d8822c006e",
+      "comment": "",
+      "command": "echo",
+      "target": "Значение плана: ${plan}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c627d1c5-6d0a-48c2-ba2c-08b248dd2a4d",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=.//span[@data-tip='Значение планa на 2022 год']",
+      "targets": [],
+      "value": "budget"
+    }, {
+      "id": "b3564e5e-1417-4509-9493-fb0bf030feb9",
+      "comment": "",
+      "command": "echo",
+      "target": "Значение бюджета: ${budget}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6ee9d8f-eb61-4c98-95c0-67a3f80b2cca",
+      "comment": "",
+      "command": "assert",
+      "target": "plan",
+      "targets": [],
+      "value": "${budget}"
+    }]
+  }, {
+    "id": "8ba1e332-762f-487d-88d3-1ccc2de6290d",
+    "name": "raspadskaya_7_check_plan",
+    "commands": [{
+      "id": "786f85b8-8d2a-445b-8259-fb7b664a76a8",
+      "comment": "",
+      "command": "open",
+      "target": "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/sinking/workings?mine_id=1&lava_id=1&sector_id=0&actual=true&operationalPlan=true&period_type=year",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d8b4192-ec35-46f3-bd45-f336468b603f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=.//span[@data-tip='Прогнозное значение на 2022 год']",
+      "targets": [
+        ["css=.PageMines_tableRow_first__16jq4 > .PageMines_tableCell_name__2IC90", "css:finder"],
+        ["xpath=//div[@id='root']/main/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Распадская угольная компания')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "78573eb9-4c0e-45d7-a037-2ccf0df96d03",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=.//*[contains(@class, 'recharts-text recharts-label')and contains(@text-anchor, 'start')]//*",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "b8642b77-fb34-4451-9e20-5294b02b5cf1",
+      "comment": "",
+      "command": "store",
+      "target": "0",
+      "targets": [],
+      "value": "sum"
+    }, {
+      "id": "831f35c6-3f7e-4e9d-b33f-0a4c31bec105",
+      "comment": "",
+      "command": "echo",
+      "target": "Количество нодов: ${count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90bd0e90-7262-4296-a8d7-f0637587e190",
+      "comment": "",
+      "command": "while",
+      "target": "${count} > 0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1d8a83e-045d-488c-83b6-55e99049bc2a",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=.//*[contains(@class, 'recharts-text recharts-label')and contains(@text-anchor, 'start')][${count}]//*",
+      "targets": [],
+      "value": "element"
+    }, {
+      "id": "50c9fb15-7874-4546-92ce-da0852a69a3f",
+      "comment": "",
+      "command": "echo",
+      "target": "Элемент: ${element}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f53c2b0-2dcb-4d6b-a10f-868459fdc90b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Number(${sum})+Number(${element})",
+      "targets": [],
+      "value": "sum"
+    }, {
+      "id": "9ebde719-0043-48cc-a210-d190c4ed4464",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Number(${count}) - 1",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "49cc009b-3a4b-49a2-9362-7b1b00eba938",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4748d3c3-2977-4a3a-a4c4-05d1474be397",
+      "comment": "",
+      "command": "echo",
+      "target": "Получившиеся сумма ${sum}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b8b51a4-1b23-4edb-9b27-f883bd315761",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=.//span[@data-tip='Прогнозное значение на 2022 год']",
+      "targets": [],
+      "value": "plan"
+    }, {
+      "id": "e27b768d-e054-4f37-8ac2-7ed0f1abd077",
+      "comment": "",
+      "command": "assert",
+      "target": "plan",
+      "targets": [],
+      "value": "${sum}"
+    }]
+  }],
+  "suites": [{
+    "id": "86859497-333b-4679-be80-cd7b4427d458",
+    "name": "mining",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3fcacafd-82be-4d93-99e9-c499c41da9ef"]
+  }, {
+    "id": "09c221e0-51cf-4dd7-9490-90912a79857e",
+    "name": "site_enable",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0c2279bf-3df8-40fd-8bac-91028031013d", "f076b20a-86c0-4a0f-94a0-d997ff308f4e", "3fcacafd-82be-4d93-99e9-c499c41da9ef"]
+  }, {
+    "id": "8155c60c-c05e-49d0-84fc-cdc2a2eb3ca8",
+    "name": "sinking",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["28907e7c-816c-4194-a4bf-2f6aa790914f", "8ba1e332-762f-487d-88d3-1ccc2de6290d"]
+  }],
+  "urls": ["http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/", "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/mining/mining/frv?mine_id=1&lava_id=1&sector_id=1&operationalPlan=true&miningFact=true&period_type=month&month=11"],
+  "plugins": []
+}
