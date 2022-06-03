@@ -1,0 +1,16 @@
+Установка scoop
+1. Открыть Powershell
+2. Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
+3. irm get.scoop.sh | iex
+
+Установка Allure
+1. в PowerShell вбить "scoop install allure "
+
+Автотесты в Pycharm складывают отчеты в нужную папку
+1. Открываем настройки запуски скрипта/скриптов pytest в Pycharm
+2. В "Additional Arguments" вбить "--alluredir=..\Allure\reports"
+
+Запуск веб-сервера с отчетами
+в PowerShell вбить "allure serve J:\Autotests\Allure\reports
+в браузере открыть "http://localhost:" + порт указанный в консоле
+

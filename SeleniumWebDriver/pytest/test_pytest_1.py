@@ -11,8 +11,20 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 
-def func(x):
-  return x + 1
+# def func(x):
+#   return x + 1
+#
+# def test_answer():
+#   assert func(3) == 5
 
-def test_answer():
-  assert func(3) == 5
+def f():
+    raise SystemExit(1)
+
+
+def test_mytest():
+  with pytest.raises(SystemExit):
+    f()
+  assert 1 == 1
+
+def test_mytest2():
+  assert 1 == 1
