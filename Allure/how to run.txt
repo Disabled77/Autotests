@@ -11,6 +11,6 @@
 2. В "Additional Arguments" вбить "--alluredir=..\Allure\reports"
 
 Запуск веб-сервера с отчетами
-в PowerShell вбить "allure serve J:\Autotests\Allure\reports
+в PowerShell вбить "allure serve J:\Autotests\Allure\reports"
 в браузере открыть "http://localhost:" + порт указанный в консоле
 

@@ -31,6 +31,8 @@ class TestSinking():
     print("Значение бюджета: {}".format(self.vars["budget"]))
     assert (self.vars["plan"] == self.vars["budget"])
 
+    select
+
   def test_raspadskaya7checkplan(self):
     self.driver.get(
       "http://prom-ecosystem-ruk-8340-dev.apps.ocpd.sib.evraz.com/sinking/workings?mine_id=1&lava_id=1&sector_id=0&actual=true&operationalPlan=true&period_type=year")
